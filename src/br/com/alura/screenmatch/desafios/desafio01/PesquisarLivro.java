@@ -13,7 +13,7 @@ public class PesquisarLivro {
         System.out.println("Digite um titulo do livro para busca: ");
         String busca = leitura.nextLine();
 
-        String endereco = "https://www.googleapis.com/books/v1/volumes?q="+busca+"&key=AIzaSyBrKRcxa7FiARLIWiQTEUBa5WlPa9po25w";
+        String endereco = "https://www.googleapis.com/books/v1/volumes?q="+busca+"&key=[chave]";
 
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder()
